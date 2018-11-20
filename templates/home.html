@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MARK LIST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    
+     <div class='container'>
+    <div class='jumbotron' style=background:lightgreen><h1 style="color:green"><center>MARK LIST GENERATOR</center></h1>
+    <p style="color:olive"> Welcome to the most easy to use online platform for generating mark lists. Just give the student and subject details in the form provided and there you go with the marksheet in a button click.  </p></div></div>
+    <div class='container'>
+        
+        <form method="POST" action="/marks">
+            <div class='card'>
+                <table>
+                    <tr>
+                        <td>
+                            Name: 
+                        </td>
+                        <td>
+                            <input type='text' placeholder="Enter name" name='name'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Reg.No.: 
+                        </td>
+                        <td>
+                            <input type='number' placeholder='Enter register no.' name='regno'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Semester: 
+                        </td>
+                        <td>
+                            <select name='sem'>
+                                <option>S1S2</option>
+                                <option>S3</option>
+                                <option>S4</option>
+                                <option>S5</option>
+                                <option>S6</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            College
+                        </td>
+                        <td>
+                            <input type='text' placeholder="college" name='college'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject1 Name
+                        </td>
+                        <td>
+                            <input type='text' placeholder="Enter subject1 name" name="sub1name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject1 Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter subject1 marks" name="sub1mark">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject1 Total Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter total marks" name="sub1tmark">
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <td>
+                            Subject2 Name
+                        </td>
+                        <td>
+                            <input type='text' placeholder="Enter subject2 name" name="sub2name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject2 Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter subject2 marks" name="sub2mark">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject2 Total Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter total marks" name="sub2tmark">
+                        </td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+                    <tr>
+                        <td>
+                            Subject3 Name
+                        </td>
+                        <td>
+                            <input type='text' placeholder="Enter subject3 name" name="sub3name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject3 Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter subject3 marks" name="sub3mark">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject3 Total Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter total marks" name="sub3tmark">
+                        </td>
+                    </tr>
+
+
+                    
+
+                    <tr>
+                        <td>
+                            Subject4 Name
+                        </td>
+                        <td>
+                    
+                            <input type='text' placeholder="Enter subject4 name" name="sub4name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject4 Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter subject4 marks" name="sub4mark">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subject4 Total Mark
+                        </td>
+                        <td>
+                            <input type='number' placeholder="Enter total marks" name="sub4tmark">
+                        </td>
+                    </tr>
+                        
+                        
+                    
+                    <br><br><br>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type='submit' name='submit'>Generate Mark List</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
